@@ -1,0 +1,83 @@
+[2026-06-11 12:10:53.620631] Server系统 | Type=系统启动 | Len=0 | 监听端口8888
+[2026-06-11 12:12:11.066001] Client系统 | Type=文件分块计算 | Len=0 | N=16 chunks=[10, 5, 5, 10, 7, 6, 6, 6, 10, 5, 10, 10, 9, 5, 9, 7]
+[2026-06-11 12:12:11.067728] Client->Server | Type=TCP连接建立 | Len=0 | 127.0.0.1:8888
+[2026-06-11 12:12:11.068225] Client->Server | Type=Initialization(1) | Len=6 | N=16
+[2026-06-11 12:12:11.068882] Server<-Client(('127.0.0.1', 63555)) | Type=连接建立 | Len=0 | 客户端地址('127.0.0.1', 63555)
+[2026-06-11 12:12:11.069454] Server<-Client(('127.0.0.1', 63555)) | Type=Initialization(1) | Len=6 | N=16
+[2026-06-11 12:12:11.070232] Server->Client | Type=Agree(2) | Len=2 | 收到初始化同意
+[2026-06-11 12:12:11.070237] Server->Client(('127.0.0.1', 63555)) | Type=Agree(2) | Len=2 | 同意初始化
+[2026-06-11 12:12:11.070901] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块1 | Len=16 | 原始文本:a little m
+[2026-06-11 12:12:11.071462] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块1 | Len=16 | 反转文本:m elttil a
+[2026-06-11 12:12:11.071557] Server->Client | Type=reverseAnswer(4) 块1 | Len=16 | 反转文本:m elttil a
+[2026-06-11 12:12:11.071960] Client->Server | Type=reverseRequest(3) 块2 | Len=11 | 原始:onkey
+[2026-06-11 12:12:11.071981] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块2 | Len=11 | 原始文本:onkey
+[2026-06-11 12:12:11.072446] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块2 | Len=11 | 反转文本:yekno
+[2026-06-11 12:12:11.072540] Server->Client | Type=reverseAnswer(4) 块2 | Len=11 | 反转文本:yekno
+[2026-06-11 12:12:11.073001] Client->Server | Type=reverseRequest(3) 块3 | Len=11 | 原始:
+hell
+[2026-06-11 12:12:11.073018] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块3 | Len=11 | 原始文本:
+hell
+[2026-06-11 12:12:11.073558] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块3 | Len=11 | 反转文本:lleh
+
+[2026-06-11 12:12:11.073645] Server->Client | Type=reverseAnswer(4) 块3 | Len=11 | 反转文本:lleh
+
+[2026-06-11 12:12:11.074062] Client->Server | Type=reverseRequest(3) 块4 | Len=16 | 原始:o world th
+[2026-06-11 12:12:11.074095] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块4 | Len=16 | 原始文本:o world th
+[2026-06-11 12:12:11.074604] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块4 | Len=16 | 反转文本:ht dlrow o
+[2026-06-11 12:12:11.074644] Server->Client | Type=reverseAnswer(4) 块4 | Len=16 | 反转文本:ht dlrow o
+[2026-06-11 12:12:11.075042] Client->Server | Type=reverseRequest(3) 块5 | Len=13 | 原始:is is t
+[2026-06-11 12:12:11.075075] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块5 | Len=13 | 原始文本:is is t
+[2026-06-11 12:12:11.075589] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块5 | Len=13 | 反转文本:t si si
+[2026-06-11 12:12:11.075638] Server->Client | Type=reverseAnswer(4) 块5 | Len=13 | 反转文本:t si si
+[2026-06-11 12:12:11.076068] Client->Server | Type=reverseRequest(3) 块6 | Len=12 | 原始:cp rev
+[2026-06-11 12:12:11.076087] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块6 | Len=12 | 原始文本:cp rev
+[2026-06-11 12:12:11.076850] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块6 | Len=12 | 反转文本:ver pc
+[2026-06-11 12:12:11.076888] Server->Client | Type=reverseAnswer(4) 块6 | Len=12 | 反转文本:ver pc
+[2026-06-11 12:12:11.077362] Client->Server | Type=reverseRequest(3) 块7 | Len=12 | 原始:erse t
+[2026-06-11 12:12:11.077392] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块7 | Len=12 | 原始文本:erse t
+[2026-06-11 12:12:11.078072] Server->Client | Type=reverseAnswer(4) 块7 | Len=12 | 反转文本:t esre
+[2026-06-11 12:12:11.077991] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块7 | Len=12 | 反转文本:t esre
+[2026-06-11 12:12:11.078470] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块8 | Len=12 | 原始文本:est
+I 
+[2026-06-11 12:12:11.078992] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块8 | Len=12 | 反转文本: I
+tse
+[2026-06-11 12:12:11.079116] Server->Client | Type=reverseAnswer(4) 块8 | Len=12 | 反转文本: I
+tse
+[2026-06-11 12:12:11.079475] Client->Server | Type=reverseRequest(3) 块9 | Len=16 | 原始:love netwo
+[2026-06-11 12:12:11.079493] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块9 | Len=16 | 原始文本:love netwo
+[2026-06-11 12:12:11.080104] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块9 | Len=16 | 反转文本:owten evol
+[2026-06-11 12:12:11.080157] Server->Client | Type=reverseAnswer(4) 块9 | Len=16 | 反转文本:owten evol
+[2026-06-11 12:12:11.080834] Client->Server | Type=reverseRequest(3) 块10 | Len=11 | 原始:rk pr
+[2026-06-11 12:12:11.080854] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块10 | Len=11 | 原始文本:rk pr
+[2026-06-11 12:12:11.081736] Server->Client | Type=reverseAnswer(4) 块10 | Len=11 | 反转文本:rp kr
+[2026-06-11 12:12:11.081697] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块10 | Len=11 | 反转文本:rp kr
+[2026-06-11 12:12:11.082148] Client->Server | Type=reverseRequest(3) 块11 | Len=16 | 原始:ogramming
+
+[2026-06-11 12:12:11.082417] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块11 | Len=16 | 原始文本:ogramming
+
+[2026-06-11 12:12:11.082884] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块11 | Len=16 | 反转文本:
+gnimmargo
+[2026-06-11 12:12:11.082982] Server->Client | Type=reverseAnswer(4) 块11 | Len=16 | 反转文本:
+gnimmargo
+[2026-06-11 12:12:11.083520] Client->Server | Type=reverseRequest(3) 块12 | Len=16 | 原始:python soc
+[2026-06-11 12:12:11.083549] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块12 | Len=16 | 原始文本:python soc
+[2026-06-11 12:12:11.084416] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块12 | Len=16 | 反转文本:cos nohtyp
+[2026-06-11 12:12:11.084496] Server->Client | Type=reverseAnswer(4) 块12 | Len=16 | 反转文本:cos nohtyp
+[2026-06-11 12:12:11.085132] Client->Server | Type=reverseRequest(3) 块13 | Len=15 | 原始:ket multi
+[2026-06-11 12:12:11.085148] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块13 | Len=15 | 原始文本:ket multi
+[2026-06-11 12:12:11.086123] Server->Client | Type=reverseAnswer(4) 块13 | Len=15 | 反转文本:itlum tek
+[2026-06-11 12:12:11.086072] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块13 | Len=15 | 反转文本:itlum tek
+[2026-06-11 12:12:11.086584] Client->Server | Type=reverseRequest(3) 块14 | Len=11 | 原始: thre
+[2026-06-11 12:12:11.086687] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块14 | Len=11 | 原始文本: thre
+[2026-06-11 12:12:11.087303] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块14 | Len=11 | 反转文本:erht 
+[2026-06-11 12:12:11.087938] Client->Server | Type=reverseRequest(3) 块15 | Len=15 | 原始:ad server
+[2026-06-11 12:12:11.087956] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块15 | Len=15 | 原始文本:ad server
+[2026-06-11 12:12:11.088654] Server->Client | Type=reverseAnswer(4) 块15 | Len=15 | 反转文本:revres da
+[2026-06-11 12:12:11.088615] Server->Client(('127.0.0.1', 63555)) | Type=reverseAnswer(4) 块15 | Len=15 | 反转文本:revres da
+[2026-06-11 12:12:11.089151] Client->Server | Type=reverseRequest(3) 块16 | Len=13 | 原始: client
+[2026-06-11 12:12:11.089496] Server<-Client(('127.0.0.1', 63555)) | Type=reverseRequest(3) 块16 | Len=13 | 原始文本: client
+[2026-06-11 12:12:11.090212] Server->Client | Type=reverseAnswer(4) 块16 | Len=13 | 反转文本:tneilc 
+反转文本:tneilc 
+[2026-06-11 12:12:11.090850] Server(('127.0.0.1', 63555)) | Type=连接关闭 | Len=0 | 会话结束
+[2026-06-11 12:12:11.091226] Client系统 | Type=任务完成 | Len=0 | 完整反转文件写入 reverse_output.txt
+[2026-06-11 12:12:11.091676] Client->Server | Type=TCP连接关闭 | Len=0 | 客户端断开
